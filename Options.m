@@ -50,10 +50,10 @@ InAppPurchaseManager* xyz = nil;
         UIAlertView *purchaseAlertDialogue;
         
         purchaseAlertDialogue = [[UIAlertView alloc]
-                         initWithTitle:@"Error"
-                         message:@"In-App Purchases are disabled in your settings."
+                         initWithTitle:@"错误"
+                         message:@"系统设置禁止游戏内购买项目！"
                          delegate:self
-                         cancelButtonTitle:@"Ok"
+                         cancelButtonTitle:@"确定"
                          otherButtonTitles: nil];
         
         [purchaseAlertDialogue show];
@@ -86,10 +86,10 @@ InAppPurchaseManager* xyz = nil;
     [[NSUserDefaults standardUserDefaults] setInteger: 0 forKey: @"quizzesComplete"];
     [[NSUserDefaults standardUserDefaults] setInteger: 0 forKey: @"highscore"];
     
-    NSString *hs = [NSString stringWithFormat:@"Highscore: %i", [[NSUserDefaults standardUserDefaults] integerForKey:@"highscore"]];
+    NSString *hs = [NSString stringWithFormat:@"最高分: %i", [[NSUserDefaults standardUserDefaults] integerForKey:@"highscore"]];
     highScore.text = hs;
     
-    NSString *qc = [NSString stringWithFormat:@"Quizzes Completed: %i", [[NSUserDefaults standardUserDefaults] integerForKey:@"quizzesComplete"]];
+    NSString *qc = [NSString stringWithFormat:@"答题完毕: %i", [[NSUserDefaults standardUserDefaults] integerForKey:@"quizzesComplete"]];
     quizzesCompleted.text = qc;
 }
 
@@ -207,10 +207,10 @@ InAppPurchaseManager* xyz = nil;
   
    
     //HighScores and QuizzesCompleted    
-    NSString *hs = [NSString stringWithFormat:@"Highscore: %i", [[NSUserDefaults standardUserDefaults] integerForKey:@"highscore"]];
+    NSString *hs = [NSString stringWithFormat:@"最高分: %i", [[NSUserDefaults standardUserDefaults] integerForKey:@"highscore"]];
     highScore.text = hs;
     
-    NSString *qc = [NSString stringWithFormat:@"Quizzes Completed: %i", [[NSUserDefaults standardUserDefaults] integerForKey:@"quizzesComplete"]];
+    NSString *qc = [NSString stringWithFormat:@"答题完毕: %i", [[NSUserDefaults standardUserDefaults] integerForKey:@"quizzesComplete"]];
     quizzesCompleted.text = qc;
     
     //Disable Timer IAP

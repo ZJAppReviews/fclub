@@ -77,7 +77,7 @@
     quizTicker = [NSTimer scheduledTimerWithTimeInterval: 1 target:self selector:@selector(manageTime) userInfo:nil repeats:YES];
     
     //Points Label
-    NSString *numberOfPoints = [NSString stringWithFormat:@"%i Points", points];
+    NSString *numberOfPoints = [NSString stringWithFormat:@"%i 分", points];
     pointsCount.text = numberOfPoints;
     
     //FiftyFifty Label
@@ -112,72 +112,72 @@
         if (totalQuestions<5) 
         {
             levelArray=levelOne;
-            levelNumber.text=@"Level 1";
+            levelNumber.text=@"关卡 1";
         }
    
         else if (totalQuestions<10) 
         {
             levelArray=levelTwo;
-            levelNumber.text=@"Level 2";
+            levelNumber.text=@"关卡 2";
         }
    
         else if (totalQuestions<15) 
         {
             levelArray=levelThree;
-            levelNumber.text=@"Level 3";
+            levelNumber.text=@"关卡 3";
         }
     
         else if (totalQuestions<20) 
         {
             levelArray=levelFour;
-            levelNumber.text=@"Level 4";
+            levelNumber.text=@"关卡 4";
         }
     
         else if (totalQuestions<25) 
         {
             levelArray=levelFive;
-            levelNumber.text=@"Level 5";
+            levelNumber.text=@"关卡 5";
         }
     
         else if (totalQuestions<30) 
         {
             levelArray=levelSix;
-            levelNumber.text=@"Level 6";
+            levelNumber.text=@"关卡 6";
         }
         else if (totalQuestions<35)
         {
             levelArray=levelSeven;
-            levelNumber.text=@"Level 7";
+            levelNumber.text=@"关卡 7";
         }
         else if (totalQuestions<40)
         {
             levelArray=levelEight;
-            levelNumber.text=@"Level 8";
+            levelNumber.text=@"关卡 8";
         }
         else if (totalQuestions<45)
         {
             levelArray=levelNine;
-            levelNumber.text=@"Level 9";
+            levelNumber.text=@"关卡 9";
         }
         else if (totalQuestions<50)
         {
             levelArray=levelTen;
-            levelNumber.text=@"Level 10";
+            levelNumber.text=@"关卡 10";
         }
         else if (totalQuestions<55)
         {
             levelArray=levelEleven;
-            levelNumber.text=@"Level 11";
+            levelNumber.text=@"关卡 11";
         }
         else if (totalQuestions<60)
         {
             levelArray=levelTwelve;
-            levelNumber.text=@"Level 12";
+            levelNumber.text=@"关卡 12";
         }
         else if (totalQuestions<65)
         {
             levelArray=levelThirteen;
-            levelNumber.text=@"Level 13";
+            levelNumber.text=@"关卡 13";
         }
     
    
@@ -517,7 +517,7 @@
     if ([[NSUserDefaults standardUserDefaults] boolForKey:@"wantsToSkipLevels"] == YES)
     {
         points = 360;
-        pointsCount.text=@"360 Points";
+        pointsCount.text=@"360 分";
         questionsAnswered = 0;
         totalQuestions=15;
         lives = 3;
@@ -528,7 +528,7 @@
     else
     {
     points = 0;
-    pointsCount.text=@"0 Points";
+    pointsCount.text=@"0 分";
     questionsAnswered = 0;
     totalQuestions=0;
     lives = 3;

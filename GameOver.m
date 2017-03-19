@@ -93,17 +93,17 @@
         
         [[NSUserDefaults standardUserDefaults] setInteger: points forKey: @"highscore"];
         
-        NSString *newHighscore = [NSString stringWithFormat:@"New High Score: %i", points];
+        NSString *newHighscore = [NSString stringWithFormat:@"新纪录: %i分", points];
         finalScoreLabel.text = newHighscore;
         highScoreLabel.text = @"";
     }
     
     else
     {
-        NSString *finalScore = [NSString stringWithFormat:@"Your score: %i Points", points];
+        NSString *finalScore = [NSString stringWithFormat:@"分数: %i 分", points];
         finalScoreLabel.text = finalScore;
         
-        NSString *updateHighscore = [NSString stringWithFormat:@"Highscore: %i", [[NSUserDefaults standardUserDefaults] integerForKey:@"highscore"]];
+        NSString *updateHighscore = [NSString stringWithFormat:@"最高分: %i分", [[NSUserDefaults standardUserDefaults] integerForKey:@"highscore"]];
         highScoreLabel.text=updateHighscore;
     }
 

@@ -47,13 +47,13 @@
 //Request to rate applciation
 - (void) alertView:(UIAlertView *) alertView didDismissWithButtonIndex:(NSInteger)buttonIndex
 {
-    if ([[alertView buttonTitleAtIndex: buttonIndex] isEqualToString:@"No, Thanks"])
+    if ([[alertView buttonTitleAtIndex: buttonIndex] isEqualToString:@"残忍拒绝"])
     {
 		[[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"neverAsk"];
 	}
-    else if ([[alertView buttonTitleAtIndex: buttonIndex] isEqualToString:@"Rate Football Master"])
+    else if ([[alertView buttonTitleAtIndex: buttonIndex] isEqualToString:@"这就去吐槽"])
     {
-        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://itunes.apple.com/us/app/football-master/id651608590?ls=1&mt=8"]];
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://itunes.apple.com/us/app/id1217101850?l=zh&ls=1&mt=8"]];
         [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"neverAsk"];
     }
 }
@@ -135,11 +135,11 @@
         UIAlertView *alertDialogue;
         
         alertDialogue = [[UIAlertView alloc]
-                         initWithTitle:@"Rate Football Master"
-                         message:@"If you enjoy using Football Master, would you mind taking a moment to rate it? It won't take more than a minute. Thanks!"
+                         initWithTitle:@"吐槽还是评价？"
+                         message:@"如果玩的愉快，这就去帮我做个评价吧！吐个槽也行呀！"
                          delegate:self
-                         cancelButtonTitle:@"Remind me later"
-                         otherButtonTitles:@"Rate Football Master", @"No, Thanks", nil];
+                         cancelButtonTitle:@"以后再说"
+                         otherButtonTitles:@"这就去吐槽", @"残忍拒绝", nil];
         
         [alertDialogue show];
     }

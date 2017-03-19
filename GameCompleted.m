@@ -38,10 +38,10 @@
         UIAlertView *unlockNotification;
         
         unlockNotification = [[UIAlertView alloc]
-                              initWithTitle:@"Want to unlock levels 11-13?"
-                              message:@"All you have to do now is like our Facebook page in \"Unlocks\"."
+                              initWithTitle:@"想解锁关卡 11-13?"
+                              message:@"你从 \"解锁\"页面关注我们的Facebook就可以。"
                               delegate:self
-                              cancelButtonTitle:@"Ok"
+                              cancelButtonTitle:@"确定"
                               otherButtonTitles: nil];
         
         [unlockNotification show];
@@ -131,12 +131,12 @@
    
     if (totalQuestions==50)
     {
-        NSString *ultimateMessage = [NSString stringWithFormat:@"You completed the first 10 levels with %i points.", points];
+        NSString *ultimateMessage = [NSString stringWithFormat:@"你已经以 %i 的分数完成了前10个关卡。", points];
         finalMessage.text=ultimateMessage;
     }
     else if (totalQuestions==65)
     {
-        NSString *ultimateMessage = [NSString stringWithFormat:@"You completed all 13 levels with %i points.", points];
+        NSString *ultimateMessage = [NSString stringWithFormat:@"你已经以 %i 的分数完成了全部的13个关卡。", points];
         finalMessage.text=ultimateMessage;
     }
     
@@ -147,7 +147,7 @@
       [[NSUserDefaults standardUserDefaults] setInteger: points forKey: @"highscore"];  
     }
     
-    NSString *updateHighscore = [NSString stringWithFormat:@"Highscore: %i", [[NSUserDefaults standardUserDefaults] integerForKey:@"highscore"]];
+    NSString *updateHighscore = [NSString stringWithFormat:@"最高分: %i", [[NSUserDefaults standardUserDefaults] integerForKey:@"highscore"]];
     
     highScoreLabel.text=updateHighscore;
     

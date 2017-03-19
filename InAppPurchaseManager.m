@@ -72,8 +72,8 @@ Options* optionsObj = nil;
                                  initWithTitle:title
                                  message:message
                                  delegate:self
-                                 cancelButtonTitle:@"Cancel"
-                                 otherButtonTitles:@"Buy for $0.99", nil];
+                                 cancelButtonTitle:@"取消"
+                                 otherButtonTitles:@"6元解锁", nil];
         
         [purchaseDialogue show];
     }
@@ -92,7 +92,7 @@ Options* optionsObj = nil;
 
 - (void) alertView:(UIAlertView *) alertView didDismissWithButtonIndex:(NSInteger)buttonIndex
 {
-    if ([[alertView buttonTitleAtIndex: buttonIndex] isEqualToString:@"Buy for $0.99"])
+    if ([[alertView buttonTitleAtIndex: buttonIndex] isEqualToString:@"6元解锁"])
     {
 		[self purchaseDisableTimer];
 	}
@@ -150,10 +150,10 @@ Options* optionsObj = nil;
         UIAlertView *purchaseSuccessful;
         
         purchaseSuccessful = [[UIAlertView alloc]
-                                 initWithTitle:@"Thank you"
-                                 message:@"\"Disable Timer\" was successfully downloaded. Go back to home and return here to see the switch appear."
+                                 initWithTitle:@"谢谢"
+                                 message:@"\"关闭计时器\" 功能一经成功解锁。进入主界面再返回这里，你就可以看到开关了。"
                                  delegate:self
-                                 cancelButtonTitle:@"Ok"
+                                 cancelButtonTitle:@"确定"
                                  otherButtonTitles: nil];
         
         [purchaseSuccessful show];

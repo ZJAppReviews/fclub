@@ -91,14 +91,14 @@
     
     if (lifeNotif==TRUE)
     {
-        NSString *bonusLife = [NSString stringWithFormat:@"7 Streak Bonus: Extra Life!"];
+        NSString *bonusLife = [NSString stringWithFormat:@"答对7题奖励: 额外1点生命值!"];
         bonusNotification.text = bonusLife;
         lifeNotif=FALSE;
     }
     
     else if (fiftyNotif==TRUE)
     {
-        NSString *bonusFifty = [NSString stringWithFormat:@"7 Streak Bonus: 50-50 Option!"];
+        NSString *bonusFifty = [NSString stringWithFormat:@"答对7题奖励: 50%正确跳过一题!"];
         bonusNotification.text = bonusFifty;
         fiftyNotif=FALSE;
     }
@@ -113,10 +113,10 @@
             UIAlertView *unlockNotification;
             
             unlockNotification = [[UIAlertView alloc]
-                                  initWithTitle:@"Feature Unlocked!"
-                                  message:@"You can now enable the option to skip levels 1-3 in \"Unlocks\"."
+                                  initWithTitle:@"新功能解锁!"
+                                  message:@"现在你可以在\"解锁\"页面选择跳过关卡1-3。"
                                   delegate:self
-                                  cancelButtonTitle:@"Ok"
+                                  cancelButtonTitle:@"确定"
                                   otherButtonTitles: nil];
             
             [unlockNotification show];
@@ -129,10 +129,10 @@
         UIAlertView *unlockNotification;
         
         unlockNotification = [[UIAlertView alloc]
-                              initWithTitle:@"Want to skip levels 1-3?"
-                              message:@"You can now do so by rating us in the App Store in \"Unlocks\". You will start at level 4 with 360 points."
+                              initWithTitle:@"想直接跳过关卡1-3?"
+                              message:@"现在去给我们一个评价，就可以直接在\"解锁\"页面选择跳过关卡1-3，从关卡4直接开始，并且获得360分。"
                               delegate:self
-                              cancelButtonTitle:@"Ok"
+                              cancelButtonTitle:@"确定"
                               otherButtonTitles: nil];
         
         [unlockNotification show];
@@ -169,7 +169,7 @@
     
     [nextQuestion setHidden: YES];
     
-    NSString *pointsGained = [NSString stringWithFormat:@"+ %i Points!", pointsAwarded];
+    NSString *pointsGained = [NSString stringWithFormat:@"+ %i 分!", pointsAwarded];
     pointsEarned.text = pointsGained;
     
     int nextLevel=2;
@@ -214,7 +214,7 @@
         nextLevel=13;
     }
     
-    NSString *pointsAndLevel = [NSString stringWithFormat:@"You have advanced to level %i!", nextLevel];
+    NSString *pointsAndLevel = [NSString stringWithFormat:@"进阶到关卡 %i!", nextLevel];
     message.text = pointsAndLevel;
     
     
@@ -268,10 +268,10 @@
             UIAlertView *unlockNotification;
             
             unlockNotification = [[UIAlertView alloc]
-                                  initWithTitle:@"Feature Unlocked!"
-                                  message:@"You have unlocked levels 11-13!"
+                                  initWithTitle:@"新功能解锁!"
+                                  message:@"你已经解锁了关卡11-13!"
                                   delegate:self
-                                  cancelButtonTitle:@"Ok"
+                                  cancelButtonTitle:@"确定"
                                   otherButtonTitles: nil];
             
             [unlockNotification show];

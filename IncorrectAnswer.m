@@ -88,19 +88,19 @@
     
     if (timeIsUp == FALSE) {
         
-        incorrectLabel.text = @"Incorrect!";
+        incorrectLabel.text = @"回答错误!";
     }
     else {
-        incorrectLabel.text = @"Time is up!";
+        incorrectLabel.text = @"时间到!";
     }
     
     if (lives==2)
     {
-        numberOfLives.text = @"You now have 2 lives remaining.";
+        numberOfLives.text = @"生命值还剩余2点。";
     }
     else if (lives==1)
     {
-        numberOfLives.text = @"You now have 1 life remaining.";
+        numberOfLives.text = @"生命值还剩余1点。";
     }
 }
 

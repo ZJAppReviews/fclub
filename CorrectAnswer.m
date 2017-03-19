@@ -49,20 +49,20 @@
     
     if (lifeNotif==TRUE)
     {
-        NSString *bonusLife = [NSString stringWithFormat:@"7 Streak Bonus: Extra Life!"];
+        NSString *bonusLife = [NSString stringWithFormat:@"答对7题奖励: 额外1点生命值!"];
         pointsBonus.text = bonusLife;
         lifeNotif=FALSE;
     }
     
     else if (fiftyNotif==TRUE)
     {
-        NSString *bonusFifty = [NSString stringWithFormat:@"7 Streak Bonus: 50-50 Option!"];
+        NSString *bonusFifty = [NSString stringWithFormat:@"答对7题奖励: 50%正确跳过一题!"];
         pointsBonus.text = bonusFifty;
         fiftyNotif=FALSE;
     }
     else
     {
-        NSString *bonusPoints = [NSString stringWithFormat:@"(%i point time bonus)", timeBonus];
+        NSString *bonusPoints = [NSString stringWithFormat:@"(%i 秒奖励时间)", timeBonus];
         pointsBonus.text = bonusPoints;
     }
 }
@@ -92,7 +92,7 @@
     
     [next setHidden: YES];
     
-    NSString *pointsGained = [NSString stringWithFormat:@"+ %i Points!", pointsAwarded];
+    NSString *pointsGained = [NSString stringWithFormat:@"+ %i 分!", pointsAwarded];
     pointsEarned.text = pointsGained;
     
     //Players Array

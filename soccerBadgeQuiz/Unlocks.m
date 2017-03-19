@@ -54,10 +54,10 @@
             UIAlertView *unlockNotification;
             
             unlockNotification = [[UIAlertView alloc]
-                                  initWithTitle:@"Feature Unlocked!"
-                                  message:@"You have unlocked levels 11-13."
+                                  initWithTitle:@"新功能解锁!"
+                                  message:@"你已经成功解锁关卡 11-13."
                                   delegate:self
-                                  cancelButtonTitle:@"Ok"
+                                  cancelButtonTitle:@"确定"
                                   otherButtonTitles: nil];
             
             [unlockNotification show];
@@ -81,10 +81,10 @@
             UIAlertView *unlockNotification;
             
             unlockNotification = [[UIAlertView alloc]
-                                  initWithTitle:@"Feature Unlocked!"
-                                  message:@"You can now enable the option to skip levels 1-3."
+                                  initWithTitle:@"新功能解锁!"
+                                  message:@"你已经成功解锁跳过关卡 1-3 的功能。"
                                   delegate:self
-                                  cancelButtonTitle:@"Ok"
+                                  cancelButtonTitle:@"确定"
                                   otherButtonTitles: nil];
             
             [unlockNotification show];
@@ -111,7 +111,7 @@
 
 -(IBAction) goToAppStore:(id)sender
 {
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://itunes.apple.com/us/app/football-master/id651608590?ls=1&mt=8"]];
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://itunes.apple.com/us/app/id1217101850?l=zh&ls=1&mt=8"]];
     
     //Record that the button has been clicked
     [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"rateAppStore"];
@@ -187,7 +187,7 @@
     
     //Count of levels 1-3 beaten perfectly
     int k = [[NSUserDefaults standardUserDefaults] integerForKey:@"timesLevels13Beaten"];
-    NSString *count1 = [NSString stringWithFormat:@"(count: %i)", k];
+    NSString *count1 = [NSString stringWithFormat:@"(次数: %i)", k];
     count.text = count1;
     
     if ([[NSUserDefaults standardUserDefaults] boolForKey:@"skipLevels"] == NO)

@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5056" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <deployment defaultVersion="1792" identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="XYZViewController">
@@ -27,8 +31,8 @@
                     <rect key="frame" x="131" y="107" width="59" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="20"/>
-                    <state key="normal" title="Start">
-                        <color key="titleColor" red="0.92920918367346939" green="0.92920918367346939" blue="0.92920918367346939" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="开始">
+                        <color key="titleColor" red="0.92920918367346939" green="0.92920918367346939" blue="0.92920918367346939" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
                     <connections>
                         <action selector="initiateGame:" destination="-1" eventType="touchUpInside" id="11"/>
@@ -38,9 +42,9 @@
                     <rect key="frame" x="202" y="392" width="76" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
                     <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="20"/>
-                    <state key="normal" title="Unlocks">
-                        <color key="titleColor" red="0.92920918370000005" green="0.92920918370000005" blue="0.92920918370000005" alpha="1" colorSpace="calibratedRGB"/>
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    <state key="normal" title="解锁">
+                        <color key="titleColor" red="0.92920918370000005" green="0.92920918370000005" blue="0.92920918370000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
                     <connections>
                         <action selector="goToUnlocks:" destination="-1" eventType="touchUpInside" id="yyM-e8-Pdc"/>
@@ -50,19 +54,26 @@
                     <rect key="frame" x="41" y="389" width="76" height="36"/>
                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
                     <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="20"/>
-                    <state key="normal" title="Options">
-                        <color key="titleColor" red="0.92920918370000005" green="0.92920918370000005" blue="0.92920918370000005" alpha="1" colorSpace="calibratedRGB"/>
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    <state key="normal" title="设置">
+                        <color key="titleColor" red="0.92920918370000005" green="0.92920918370000005" blue="0.92920918370000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
                     <connections>
                         <action selector="goToOptions:" destination="-1" eventType="touchUpInside" id="a9c-DC-EWD"/>
                     </connections>
                 </button>
             </subviews>
-            <color key="backgroundColor" red="0.84921077810000001" green="0.84921077810000001" blue="0.84921077810000001" alpha="1" colorSpace="calibratedRGB"/>
+            <color key="backgroundColor" red="0.84921077810000001" green="0.84921077810000001" blue="0.84921077810000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
         </view>
     </objects>
     <resources>
         <image name="FirstBackground@2X.png" width="640" height="960"/>
     </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
 </document>
