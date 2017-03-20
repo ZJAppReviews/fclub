@@ -147,7 +147,7 @@
       [[NSUserDefaults standardUserDefaults] setInteger: points forKey: @"highscore"];  
     }
     
-    NSString *updateHighscore = [NSString stringWithFormat:@"最高分: %i", [[NSUserDefaults standardUserDefaults] integerForKey:@"highscore"]];
+    NSString *updateHighscore = [NSString stringWithFormat:@"最好成绩: %i", [[NSUserDefaults standardUserDefaults] integerForKey:@"highscore"]];
     
     highScoreLabel.text=updateHighscore;
     

@@ -187,7 +187,7 @@
     
     //Count of levels 1-3 beaten perfectly
     int k = [[NSUserDefaults standardUserDefaults] integerForKey:@"timesLevels13Beaten"];
-    NSString *count1 = [NSString stringWithFormat:@"(次数: %i)", k];
+    NSString *count1 = [NSString stringWithFormat:@"(完成次数: %i)", k];
     count.text = count1;
     
     if ([[NSUserDefaults standardUserDefaults] boolForKey:@"skipLevels"] == NO)

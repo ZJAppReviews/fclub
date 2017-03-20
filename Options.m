@@ -86,7 +86,7 @@ InAppPurchaseManager* xyz = nil;
     [[NSUserDefaults standardUserDefaults] setInteger: 0 forKey: @"quizzesComplete"];
     [[NSUserDefaults standardUserDefaults] setInteger: 0 forKey: @"highscore"];
     
-    NSString *hs = [NSString stringWithFormat:@"最高分: %i", [[NSUserDefaults standardUserDefaults] integerForKey:@"highscore"]];
+    NSString *hs = [NSString stringWithFormat:@"最好成绩: %i", [[NSUserDefaults standardUserDefaults] integerForKey:@"highscore"]];
     highScore.text = hs;
     
     NSString *qc = [NSString stringWithFormat:@"答题完毕: %i", [[NSUserDefaults standardUserDefaults] integerForKey:@"quizzesComplete"]];
@@ -109,11 +109,11 @@ InAppPurchaseManager* xyz = nil;
 	UIAlertView *alertDialogue;
 	
 	alertDialogue = [[UIAlertView alloc]
-					 initWithTitle:@"Reset"
-					 message:@"Are you sure you want to reset the highscore and quiz completions?"
+					 initWithTitle:@"重置数据"
+					 message:@"你确定要重置所有数据吗？这会抹掉最好成绩和答题完成次数。"
 					 delegate:self
-					 cancelButtonTitle:@"Cancel"
-					 otherButtonTitles:@"Yes", nil];
+					 cancelButtonTitle:@"不"
+					 otherButtonTitles:@"是的", nil];
 	
 	[alertDialogue show];
 }
@@ -207,7 +207,7 @@ InAppPurchaseManager* xyz = nil;
   
    
     //HighScores and QuizzesCompleted    
-    NSString *hs = [NSString stringWithFormat:@"最高分: %i", [[NSUserDefaults standardUserDefaults] integerForKey:@"highscore"]];
+    NSString *hs = [NSString stringWithFormat:@"最好成绩: %i", [[NSUserDefaults standardUserDefaults] integerForKey:@"highscore"]];
     highScore.text = hs;
     
     NSString *qc = [NSString stringWithFormat:@"答题完毕: %i", [[NSUserDefaults standardUserDefaults] integerForKey:@"quizzesComplete"]];

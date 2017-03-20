@@ -103,7 +103,7 @@
         NSString *finalScore = [NSString stringWithFormat:@"分数: %i 分", points];
         finalScoreLabel.text = finalScore;
         
-        NSString *updateHighscore = [NSString stringWithFormat:@"最高分: %i分", [[NSUserDefaults standardUserDefaults] integerForKey:@"highscore"]];
+        NSString *updateHighscore = [NSString stringWithFormat:@"最好成绩: %i分", [[NSUserDefaults standardUserDefaults] integerForKey:@"highscore"]];
         highScoreLabel.text=updateHighscore;
     }
 
