@@ -100,7 +100,7 @@
 
 -(IBAction)goToFacebook:(id)sender
 {
-    NSURL *url = [NSURL URLWithString:@"fb://profile/595153780509096"];
+    NSURL *url = [NSURL URLWithString:@"fb://profile/595153"];
     [[UIApplication sharedApplication] openURL:url];
     
     //Record that the button has been clicked

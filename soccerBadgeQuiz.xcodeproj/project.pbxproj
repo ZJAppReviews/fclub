@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5890DCA31E7F7D4800AD1229 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5890DCA21E7F7D4800AD1229 /* Images.xcassets */; };
 		B20C033A17812E4A00B68D66 /* Pumas.png in Resources */ = {isa = PBXBuildFile; fileRef = B20C033917812E4A00B68D66 /* Pumas.png */; };
 		B214B1CB174F137B005982CE /* XYZViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B225B7CF15F5715500D5F9BE /* XYZViewController.m */; };
 		B214B1CD174F13DB005982CE /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B214B1CC174F13DB005982CE /* iAd.framework */; };
@@ -331,6 +332,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5890DCA21E7F7D4800AD1229 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = "Football Master/Images.xcassets"; sourceTree = "<group>"; };
 		B20C033917812E4A00B68D66 /* Pumas.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Pumas.png; sourceTree = "<group>"; };
 		B214B1CC174F13DB005982CE /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
 		B21E560418D34C21004ADBE6 /* soccerball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = soccerball.png; sourceTree = "<group>"; };
@@ -768,6 +770,7 @@
 		B225B7AD15F5715500D5F9BE = {
 			isa = PBXGroup;
 			children = (
+				5890DCA21E7F7D4800AD1229 /* Images.xcassets */,
 				B2C3D08F18F752050093FD2C /* Default-568h@2x.png */,
 				B2AF34AF17848678001A1D73 /* GameCenterManager.m */,
 				B275704B17406BA80052E714 /* Football Master.entitlements */,
@@ -1566,6 +1569,7 @@
 				B2B44EC5178374BD00B9BF0E /* ClubBrugge.png in Resources */,
 				B2B44EC71783817800B9BF0E /* ViktoriaPlzen.png in Resources */,
 				B2B44EE41783A72D00B9BF0E /* EvianTGFC.png in Resources */,
+				5890DCA31E7F7D4800AD1229 /* Images.xcassets in Resources */,
 				B2B44EE61783A78000B9BF0E /* CerroPorteno.png in Resources */,
 				B2B44EE81783AA0D00B9BF0E /* BSCYoungBoys.png in Resources */,
 				B238302119345FB500373E4B /* Ribery.png in Resources */,
@@ -1654,7 +1658,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -1681,7 +1685,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -1691,6 +1695,8 @@
 		B225B7D715F5715500D5F9BE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = "Football Master.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Abiel Gutierrez (4B3EVF6U65)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -1698,8 +1704,8 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "soccerBadgeQuiz/soccerBadgeQuiz-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/soccerBadgeQuiz/FootballMaster-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				PRODUCT_BUNDLE_IDENTIFIER = cn.mengyoutu.FootballMaster;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.mengyoutu.fclub;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -1710,6 +1716,8 @@
 		B225B7D815F5715500D5F9BE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = "Football Master.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Abiel Gutierrez (4B3EVF6U65)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -1717,10 +1725,11 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "soccerBadgeQuiz/soccerBadgeQuiz-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/soccerBadgeQuiz/FootballMaster-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				PRODUCT_BUNDLE_IDENTIFIER = cn.mengyoutu.FootballMaster;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.mengyoutu.fclub;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};

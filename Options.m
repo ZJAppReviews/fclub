@@ -76,7 +76,7 @@ InAppPurchaseManager* xyz = nil;
 
 -(IBAction)goToFacebook:(id)sender
 {
-    NSURL *url = [NSURL URLWithString:@"fb://profile/595153780509096"];
+    NSURL *url = [NSURL URLWithString:@"fb://profile/5951537"];
     [[UIApplication sharedApplication] openURL:url];
 }
 
